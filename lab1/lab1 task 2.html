@@ -4,73 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме | Нікіта Майборода</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Нікіта Майборода</h1>
-        <p>Місто: Львів | Тел: +380 66 886 47 25</p>
-        <p>Email: <a href="mailto:Nikita.Maiboroda@lnu.edu.ua">Nikita.Maiboroda@lnu.edu.ua</a></p>
-        <nav>
-            <a href="https://linkedin.com/in/nikita-maiboroda-28650b205" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/rabilint" target="_blank">GitHub</a>
-        </nav>
-    </header>
+    <aside>
+        <div class="profile-img"></div>
 
-    <main>
-        <section id="languages">
-            <h2>Володіння мовами</h2>
+        <section>
+            <h2>Contact</h2>
+            <p><i class="fas fa-phone"></i> +380 66 886 47 25</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:Nikita.Maiboroda@lnu.edu.ua">Nikita.Maiboroda@lnu.edu.ua</a></p>
+            <p><i class="fas fa-location-dot"></i> Львів, Україна</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/nikita-maiboroda-28650b205">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/rabilint">GitHub</a></p>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
             <ul>
                 <li>Українська: Рідна</li>
                 <li>Англійська: B1+ (Intermediate)</li>
             </ul>
         </section>
 
-        <section id="education">
-            <h2>Освіта</h2>
-            <div>
-                <h3>Львівський національний університет імені Івана Франка</h3>
-                <p>Спеціальність: 121 "Інженерія програмного забезпечення"</p>
-                <p>Спеціалізація: "Високопродуктивні обчислення" (HPC)</p>
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <p><strong>ЛНУ ім. Івана Франка</strong><br>
+                Інженерія ПЗ (HPC)<br>
+                2022 - 2026</p>
+            </div>
+        </section>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Нікіта Майборода</h1>
+            <span class="title">Software Engineering Student / Team Lead</span>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Студент спеціальності "Інженерія програмного забезпечення", що спеціалізується на високоефективних обчисленнях (HPC) та розробці систем моніторингу на C++.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="entry">
+                <h3>Локальна система моніторингу та управління IoT</h3>
+                <span class="meta">Курсова робота | C++17, Arduino, SQLite</span>
+                <ul>
+                    <li>Розробка багатопотокового Backend на C++17.</li>
+                    <li>Програмування Arduino UNO R4 та UART протоколів.</li>
+                    <li>Візуалізація даних у Grafana.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <h3>Team Lead | Хакатон "CodeCon"</h3>
+                <span class="meta">Управління командою | SCRUM, Git Workflow</span>
+                <ul>
+                    <li>Організація розробки за принципами SCRUM.</li>
+                    <li>Вирішення конфліктів злиття та архітектурне планування.</li>
+                </ul>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Практичний досвід та проекти</h2>
-
-            <article>
-                <h3>Курсова робота: Локальна система моніторингу та управління IoT</h3>
-                <p>Розроблено 3-рівневу систему IoT з фокусом на надійність та продуктивність без хмарної залежності.</p>
-                <ul>
-                    <li><strong>C++ Backend:</strong> Багатопотоковий застосунок на C++17.</li>
-                    <li><strong>Concurrency:</strong> Реалізація неблокуючого Serial Communicator.</li>
-                    <li><strong>Embedded:</strong> Програмування Arduino UNO R4 для роботи з датчиками (BME680) та актуаторами.</li>
-                    <li><strong>Технології:</strong> C++17, SQLite, Grafana, Arduino C, UART.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Team Lead | Хакатон-проект "CodeCon"</h3>
-                <ul>
-                    <li>Керівництво командою розробників в умовах обмеженого часу.</li>
-                    <li>Організація процесу за принципами SCRUM.</li>
-                    <li>Управління Git-воркфлоу та вирішення конфліктів злиття.</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="courses">
-            <h2>Курси та сертифікати</h2>
-            <ul>
-                <li>Modern C++: From Intermediate to Advanced (Udemy)</li>
-                <li>QT6: QML for beginners (Udemy, у процесі навчання)</li>
-            </ul>
+        <section>
+            <h2>Technical Skills</h2>
+            <p>C++17, Arduino C, SQL, Qt6 (QML), Multi-threading, Git.</p>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Микита Майборода. Створено для GitHub репозиторію html-css.</p>
-    </footer>
 
 </body>
 </html>
